@@ -1,0 +1,39 @@
+.message {
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 16px;
+  word-wrap: break-word;
+}
+
+.income {
+  @extend .message;
+  background-color: white;
+  color: #1e963a;
+  .incomeUser {
+    font-weight: bold;
+  }
+}
+
+.outcome {
+  @extend .message;
+  background-color: #1e963a;
+  color: white;
+  span {
+    font-weight: bold;
+  }
+}
+
+.container {
+  display: flex;
+  padding-bottom: 1em;
+}
+
+.left {
+  @extend .container;
+  justify-content: flex-start;
+}
+
+.right {
+  @extend .container;
+  justify-content: flex-end;
+}

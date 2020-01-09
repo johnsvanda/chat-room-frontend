@@ -1,0 +1,20 @@
+.container {
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 3px 30px 15px rgba(0, 0, 0, 0.692);
+  padding: 4em;
+  border-radius: 4px;
+  background-color: white;
+}
+.Join {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}

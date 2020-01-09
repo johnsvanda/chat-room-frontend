@@ -1,0 +1,81 @@
+.chat {
+  width: 30%;
+  margin: auto;
+  margin-top: 12.5vh;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.692);
+  height: 80vh;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 1em;
+    padding-top: 10em;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #28a745;
+    border-radius: 100vh;
+    height: 1em;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.692);
+    .textarea {
+      flex: 3.5;
+      resize: none;
+      border-radius: 0px !important;
+      font-size: large;
+      &:focus {
+        outline: none !important;
+        border: 1px solid #28a745;
+        box-shadow: 0 0 1px 3px #28a74662;
+      }
+    }
+    .button {
+      flex: 1;
+      font-size: large;
+      border-radius: 0px !important;
+    }
+  }
+
+  .output {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.185);
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+
+    h3 {
+      background-color: #28a745;
+      width: 30.2%;
+      margin-left: -0.1%;
+      padding: 0.7em;
+      color: white;
+      box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.692);
+      margin-top: -2.6em;
+      font-size: 2em;
+      position: fixed;
+    }
+  }
+}
