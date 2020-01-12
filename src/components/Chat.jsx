@@ -15,7 +15,7 @@ const Chat = ({ location }) => {
 
   useEffect(() => {
     const { name, chatroom } = queryString.parse(location.search);
-    socket = io.connect("https://pure-island-12912.herokuapp.com/");
+    socket = io.connect("https://chat-socket-react.herokuapp.com/");
     setName(name);
     setChatroom(chatroom);
 
